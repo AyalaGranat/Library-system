@@ -1,0 +1,284 @@
+ =======================================================================================================================
+ ==== addAuthor(firstName,lastName, topic); ====
+Successfully added author: author name: Georg Cantor
+author Already Exists: Georg Cantor
+Successfully added author: author name: Paul Erdos
+Successfully added author: author name: Muhammad Majadly
+Successfully added author: author name: zineDine zidane
+Successfully added author: author name: Van Basten
+Successfully added author: author name: Dan Cesc
+author Already Exists: Dan Cesc
+ =======================================================================================================================
+ ==== remove Author (firstName , lastName); ====
+Successfully removed author: author name: Georg Cantor
+Successfully removed author: author name: Muhammad Majadly
+author does not Exist: Muhammad Majadly
+ =======================================================================================================================
+ ==== addAuthor(firstName,lastName, topic); ====
+Successfully added author: author name: Georg Cantor
+author Already Exists: Paul Erdos
+Successfully added author: author name: Muhammad Majadly
+author Already Exists: zineDine zidane
+author Already Exists: Dan Cesc
+Successfully added author: author name: soso dodo
+ =======================================================================================================================
+ ==== add book (name, authorFistName, authorLatName,bookTopic, BookSize(enum), AcademicBook(enum)) ====
+Successfully add a new book: book name: SetTheory
+Successfully add a new book: book name: SetTheory2
+Successfully add a new book: book name: SetTheory3
+Successfully add a new book: book name: ErdosNumber
+Successfully add a new book: book name: BiologyBook
+Successfully add a new book: book name: BiologyBook2
+Successfully add a new book: book name: BiologyBook3
+Successfully add a new book: book name: ChemistryBook
+item Already Exists: : SetTheory
+item Already Exists: : SetTheory
+Failed to add new book
+Successfully add a new book: book name: newMath
+ =======================================================================================================================
+ ==== remove book (bookName) ====
+Successfully removed book: book name: SetTheory
+Successfully removed book: book name: ErdosNumber
+item does not Exist: : SetTheory
+ =======================================================================================================================
+ ==== add book (name, authorFistName, authorLatName, bookTopic, BookSize(enum), AcademicBook(enum)) ====
+Successfully add a new book: book name: SetTheory
+Successfully add a new book: book name: ErdosNumber
+ =======================================================================================================================
+ ==== add paper (name, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+Successfully add a new paper: paper name: integral
+Successfully add a new paper: paper name: DataMinig
+item Already Exists: : DataMinig
+Successfully add a new paper: paper name: sin
+item Already Exists: : integral
+ =======================================================================================================================
+ ==== remove paper (paperName) ====
+Successfully removed paper: paper name: integral
+Successfully removed paper: paper name: DataMinig
+Successfully removed paper: paper name: sin
+item does not Exist: : sin
+ =======================================================================================================================
+ ==== add paper (name, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+Successfully add a new paper: paper name: integral
+Successfully add a new paper: paper name: integral2
+Successfully add a new paper: paper name: DataMinig
+Successfully add a new paper: paper name: sin
+item Already Exists: : integral
+Successfully add a new paper: paper name: chem1
+Successfully add a new paper: paper name: chem2
+Successfully add a new paper: paper name: chem3
+Successfully add a new paper: paper name: chem4
+Successfully add a new paper: paper name: chem5
+ =======================================================================================================================
+ ==== addReader(firstName,lastName); ====
+Successfully added reader: reader name: Pipo Inzagi
+Successfully added reader: reader name: Massi Rodregez
+Successfully added reader: reader name: Leo Messi
+Successfully added reader: reader name: Lucka Modric
+Reader Already Exists: Lucka Modric
+Successfully added reader: reader name: Juan Requlmi
+Successfully added reader: reader name: Thery Henry
+ =======================================================================================================================
+ ==== remove reader (readerName); ====
+Reader does not Exist: soso fofo
+Reader does not Exist: mori poji
+Successfully removed reader: reader name: Pipo Inzagi
+Successfully removed reader: reader name: Massi Rodregez
+Successfully removed reader: reader name: Leo Messi
+ =======================================================================================================================
+ ==== add new reader addAuthor(firstName,lastName, id); ====
+Successfully added reader: reader name: Pipo Inzagi
+Successfully added reader: reader name: Massi Rodregez
+Successfully added reader: reader name: Leo Messi
+ =======================================================================================================================
+ ==== read book (readerfirstName, readerfirstName, bookName) ====
+Successfully the reader: reader name: Pipo Inzagi read book: book name: SetTheory
+Failed to read book
+Successfully the reader: reader name: Pipo Inzagi read book: book name: ErdosNumber
+Successfully the reader: reader name: Massi Rodregez read book: book name: ErdosNumber
+Successfully the reader: reader name: Leo Messi read book: book name: ErdosNumber
+Successfully the reader: reader name: Leo Messi read book: book name: SetTheory
+Successfully the reader: reader name: Lucka Modric read book: book name: SetTheory
+Successfully the reader: reader name: Lucka Modric read book: book name: BiologyBook
+Successfully the reader: reader name: Lucka Modric read book: book name: BiologyBook2
+Successfully the reader: reader name: Leo Messi read book: book name: BiologyBook
+Successfully the reader: reader name: Pipo Inzagi read book: book name: BiologyBook
+ =======================================================================================================================
+ ==== read paper (readerfirstName, readerfirstName, bookName) ====
+Successfully the reader: reader name: Pipo Inzagi read paper: paper name: sin
+Successfully the reader: reader name: Pipo Inzagi read paper: paper name: integral2
+Successfully the reader: reader name: Pipo Inzagi read paper: paper name: integral
+Failed to read paper
+Failed to read paper
+Successfully the reader: reader name: Leo Messi read paper: paper name: integral
+Failed to read paper
+Successfully the reader: reader name: Leo Messi read paper: paper name: chem1
+Successfully the reader: reader name: Leo Messi read paper: paper name: chem4
+Successfully the reader: reader name: Pipo Inzagi read paper: paper name: chem1
+Successfully the reader: reader name: Thery Henry read paper: paper name: chem1
+Successfully the reader: reader name: Juan Requlmi read paper: paper name: integral
+Successfully the reader: reader name: Juan Requlmi read paper: paper name: sin
+ =======================================================================================================================
+ ==== makeBookReviw(readerFirstName, readerLastName, BookName, reviewSentence, Rate[1-10]) ====
+ ==== for example makeReviw Jane Haresson    BookOfCoking   great_book_to_learn_coking   5 ====
+Successfully adding book review, reader: reader name: Pipo Inzagi to item: book name: SetTheory
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: SetTheory
+Successfully adding book review, reader: reader name: Leo Messi to item: book name: ErdosNumber
+Failed to add book review
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: SetTheory3
+Successfully adding book review, reader: reader name: Pipo Inzagi to item: book name: SetTheory3
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: SetTheory2
+Successfully adding book review, reader: reader name: Pipo Inzagi to item: book name: SetTheory2
+Successfully adding book review, reader: reader name: Pipo Inzagi to item: book name: ChemistryBook
+Successfully adding book review, reader: reader name: Leo Messi to item: book name: ChemistryBook
+Successfully adding book review, reader: reader name: Pipo Inzagi to item: book name: BiologyBook
+Successfully adding book review, reader: reader name: Leo Messi to item: book name: BiologyBook
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: BiologyBook2
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: BiologyBook3
+Failed to add book review
+Successfully adding book review, reader: reader name: Massi Rodregez to item: book name: newMath
+ =======================================================================================================================
+ ==== makePaperReviw(readerFirstName, readerLastName, BookName, reviewSentence, Rate[1-10]) ====
+ ==== for example makeReviw Jane Haresson    BookOfCoking   great_book_to_learn_coking   5 ====
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: integral
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: DataMinig
+Successfully adding paper review, reader: reader name: Pipo Inzagi to item: paper name: integral
+Successfully adding paper review, reader: reader name: Pipo Inzagi to item: paper name: chem1
+Successfully adding paper review, reader: reader name: Pipo Inzagi to item: paper name: chem2
+Successfully adding paper review, reader: reader name: Pipo Inzagi to item: paper name: chem3
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: chem3
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: sin
+Successfully adding paper review, reader: reader name: Pipo Inzagi to item: paper name: sin
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: chem4
+Successfully adding paper review, reader: reader name: Leo Messi to item: paper name: chem5
+ =======================================================================================================================
+ ==== best book in library ====
+book name: SetTheory
+ =======================================================================================================================
+ ==== best paper in library ====
+paper name: chem3
+ =======================================================================================================================
+ ==== best k books in library ====
+[book name: SetTheory, book name: ErdosNumber, book name: SetTheory3, book name: SetTheory2, book name: ChemistryBook, book name: BiologyBook]
+[book name: SetTheory, book name: ErdosNumber, book name: SetTheory3, book name: SetTheory2]
+[book name: SetTheory, book name: ErdosNumber, book name: SetTheory3]
+[book name: SetTheory, book name: ErdosNumber]
+ =======================================================================================================================
+ ==== best k papers in library ====
+[paper name: chem3, paper name: DataMinig, paper name: integral, paper name: chem2, paper name: chem1]
+[paper name: chem3, paper name: DataMinig, paper name: integral, paper name: chem2]
+[paper name: chem3, paper name: DataMinig]
+ =======================================================================================================================
+ ==== best k books for author in library ====
+[book name: SetTheory, book name: SetTheory3]
+[book name: SetTheory, book name: SetTheory3, book name: SetTheory2]
+ =======================================================================================================================
+ ==== best k papers for author in library ====
+[]
+[paper name: chem3, paper name: chem2, paper name: chem1]
+ =======================================================================================================================
+ ==== best k books for Topic in library ====
+[book name: SetTheory, book name: ErdosNumber]
+[book name: SetTheory, book name: ErdosNumber, book name: SetTheory3]
+[book name: BiologyBook, book name: BiologyBook2, book name: BiologyBook3]
+[book name: BiologyBook, book name: BiologyBook2]
+ =======================================================================================================================
+ ==== best k papers for Topic in library ====
+[paper name: DataMinig, paper name: integral]
+[paper name: DataMinig, paper name: integral, paper name: sin]
+[paper name: chem3, paper name: chem2, paper name: chem1]
+[paper name: chem3, paper name: chem2]
+ =======================================================================================================================
+ ==== recommend fit k books by topic ====
+[book name: SetTheory3, book name: SetTheory2, book name: newMath, book name: ChemistryBook, book name: BiologyBook2]
+[book name: SetTheory3, book name: SetTheory2, book name: newMath, book name: ChemistryBook]
+[book name: SetTheory3, book name: SetTheory2, book name: newMath]
+[book name: BiologyBook3, book name: ErdosNumber, book name: SetTheory3, book name: SetTheory2, book name: newMath]
+[book name: BiologyBook3, book name: ErdosNumber, book name: SetTheory3]
+ =======================================================================================================================
+ ==== recommend fit k books by author ====
+[book name: BiologyBook3, book name: SetTheory3, book name: SetTheory2]
+[book name: BiologyBook3]
+ =======================================================================================================================
+ ==== recommend fit k papers by topic ====
+[paper name: DataMinig, paper name: sin, paper name: integral2, paper name: chem3, paper name: chem2]
+[paper name: DataMinig, paper name: chem3]
+[paper name: DataMinig]
+ =======================================================================================================================
+ ==== recommend fit k papers by author ====
+[paper name: integral, paper name: integral2]
+[paper name: DataMinig, paper name: chem3, paper name: chem2]
+[paper name: DataMinig]
+ =======================================================================================================================
+ ==== getBestReaders k ====
+[reader name: Pipo Inzagi, reader name: Leo Messi, reader name: Lucka Modric, reader name: Juan Requlmi]
+[reader name: Pipo Inzagi, reader name: Leo Messi, reader name: Lucka Modric]
+[reader name: Pipo Inzagi, reader name: Leo Messi]
+[reader name: Pipo Inzagi]
+ =======================================================================================================================
+ ==== getBestAuthors k ====
+[author name: Georg Cantor, author name: Paul Erdos, author name: Muhammad Majadly, author name: zineDine zidane, author name: Van Basten]
+[author name: Georg Cantor, author name: Paul Erdos, author name: Muhammad Majadly]
+[author name: Georg Cantor, author name: Paul Erdos]
+[author name: Georg Cantor]
+ =======================================================================================================================
+ ==== addAuthor(firstName,lastName, topic); ====
+Successfully added author: author name: author1Name author1LastName
+Successfully added author: author name: author2Name author2LastName
+Successfully added author: author name: author3Name author3LastName
+Successfully added author: author name: author4Name author4LastName
+Successfully added author: author name: author5Name author5LastName
+Successfully added author: author name: author6Name author6LastName
+Successfully added author: author name: author7Name author7LastName
+Successfully added author: author name: author8Name author8LastName
+Successfully added author: author name: author9Name author9LastName
+ =======================================================================================================================
+ ==== addEncyclopedia encyclopediaName ====
+Successfully adding encyclopedia: ene1
+ =======================================================================================================================
+ ==== addEncyclopediaBook (encyclopediaName, Bookname, authorFistName, authorLatName, bookTopic, BookSize(enum), AcademicBook(enum) ====
+Successfully add a new book: book name: book1
+Successfully add a new book: book name: book2
+Successfully add a new book: book name: book3
+Successfully add a new book: book name: book4
+ =======================================================================================================================
+ ==== getEncyclopediaBooks encyclopediaName ====
+[book name: book3, book name: book2, book name: book4, book name: book1]
+ =======================================================================================================================
+ ==== getEncyclopediaTopics encyclopediaName ====
+[MATH, CS, CHEMISTRY, HISTORY]
+ =======================================================================================================================
+ ==== getEncyclopediaAuthors encyclopediaName ====
+[author name: author3Name author3LastName, author name: author1Name author1LastName, author name: author4Name author4LastName, author name: author2Name author2LastName]
+ =======================================================================================================================
+ ==== addMagazine MagazineName ====
+Successfully adding magazine: HaifaMagazine
+ =======================================================================================================================
+ ==== addMagazinePaper (MagazineName, PaperName, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+Successfully add a new paper: paper name: paper1
+Successfully add a new paper: paper name: paper2
+Successfully add a new paper: paper name: paper3
+Successfully add a new paper: paper name: paper4
+Successfully add a new paper: paper name: paper5
+Successfully add a new paper: paper name: paper6
+ =======================================================================================================================
+ ==== getMagazinePapers MagazineName ====
+[paper name: paper5, paper name: paper6, paper name: paper3, paper name: paper4, paper name: paper1, paper name: paper2]
+ =======================================================================================================================
+ ==== getMagazineTopics MagazineName ====
+[PHYSICS, MATH, CS, CHEMISTRY, SOCIOLOGY]
+ =======================================================================================================================
+ ==== getMagazineAuthors MagazineName ====
+[author name: author8Name author8LastName, author name: author6Name author6LastName, author name: author9Name author9LastName, author name: author7Name author7LastName, author name: author5Name author5LastName]
+ =======================================================================================================================
+ ==== getLibraryAuthors ====
+[author name: author3Name author3LastName, author name: author8Name author8LastName, author name: Paul Erdos, author name: Dan Cesc, author name: author4Name author4LastName, author name: Georg Cantor, author name: soso dodo, author name: author2Name author2LastName, author name: Muhammad Majadly, author name: author7Name author7LastName, author name: Van Basten, author name: author1Name author1LastName, author name: author6Name author6LastName, author name: zineDine zidane, author name: author9Name author9LastName, author name: author5Name author5LastName]
+ =======================================================================================================================
+ ==== getLibraryBooks ====
+[book name: ErdosNumber, book name: BiologyBook, book name: BiologyBook3, book name: BiologyBook2, book name: SetTheory2, book name: SetTheory3, book name: ChemistryBook, book name: newMath, book name: SetTheory]
+ =======================================================================================================================
+ ==== getLibraryPapers ====
+[paper name: chem1, paper name: DataMinig, paper name: chem5, paper name: chem4, paper name: chem3, paper name: chem2, paper name: integral, paper name: sin, paper name: integral2]
+ =======================================================================================================================
+ ==== getLibraryReaders ====
+[reader name: Pipo Inzagi, reader name: Thery Henry, reader name: Lucka Modric, reader name: Juan Requlmi, reader name: Leo Messi, reader name: Massi Rodregez]

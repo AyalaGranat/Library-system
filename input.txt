@@ -1,0 +1,404 @@
+// =======================================================================================================================
+// ==== addAuthor(firstName,lastName, topic); ====
+addAuthor  Georg   Cantor        MATH
+addAuthor  Georg   Cantor        MATH 
+addAuthor  Paul   Erdos          MATH 
+addAuthor  Muhammad   Majadly    BIOLOGY
+addAuthor  zineDine   zidane     CHEMISTRY 
+addAuthor  Van   Basten     CHEMISTRY 
+addAuthor  Dan   Cesc            CS 
+addAuthor  Dan   Cesc            CS   
+
+
+// =======================================================================================================================
+// ==== remove Author (firstName , lastName); ====
+removeAuthor Georg Cantor
+removeAuthor Muhammad Majadly
+removeAuthor Muhammad Majadly
+
+
+
+// =======================================================================================================================
+// ==== addAuthor(firstName,lastName, topic); ====
+addAuthor  Georg      Cantor        MATH 
+addAuthor  Paul       Erdos          MATH 
+addAuthor  Muhammad   Majadly    BIOLOGY
+addAuthor  zineDine   zidane     CHEMISTRY 
+addAuthor  Dan        Cesc       CS 
+addAuthor  soso      dodo        MATH 
+
+// =======================================================================================================================
+// ==== add book (name, authorFistName, authorLatName,bookTopic, BookSize(enum), AcademicBook(enum)) ====
+addBook  SetTheory        Georg    Cantor       MATH           BIG      ACADEMIC
+addBook  SetTheory2       Georg    Cantor       MATH           BIG      ACADEMIC
+addBook  SetTheory3       Georg    Cantor       MATH           BIG      ACADEMIC
+addBook  ErdosNumber      Paul     Erdos        MATH           BIG      ACADEMIC
+addBook  BiologyBook      Muhammad  Majadly     BIOLOGY        AVERAGE  ACADEMIC
+addBook  BiologyBook2     Muhammad  Majadly     BIOLOGY        AVERAGE  ACADEMIC
+addBook  BiologyBook3     Muhammad  Majadly     BIOLOGY        AVERAGE  ACADEMIC
+addBook  ChemistryBook    zineDine  zidane      CHEMISTRY      BIG      NON_ACADEMIC
+addBook  SetTheory        Georg    Cantor       MATH           BIG      ACADEMIC
+addBook  SetTheory        Georg    Cantor       MATH           BIG      ACADEMIC
+addBook  MachineLearnning      tom    hanks    CS              BIG      ACADEMIC
+addBook  newMath         soso     dodo          MATH		  BIG	   ACADEMIC
+
+// =======================================================================================================================
+// ==== remove book (bookName) ====
+
+removeBook SetTheory
+removeBook ErdosNumber
+removeBook SetTheory
+
+
+// =======================================================================================================================
+// ==== add book (name, authorFistName, authorLatName, bookTopic, BookSize(enum), AcademicBook(enum)) ====
+
+addBook  SetTheory     Georg  Cantor   MATH       BIG    ACADEMIC
+addBook  ErdosNumber   Paul   Erdos    MATH       BIG    ACADEMIC
+
+
+// =======================================================================================================================
+// ==== add paper (name, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+
+addPaper  integral   Georg   Cantor     MATH     MAGAZINE    HaifaUniv
+addPaper  DataMinig  Paul    Erdos      MATH     MAGAZINE    HaifaUniv
+addPaper  DataMinig  Paul    Erdos      MATH     MAGAZINE    HaifaUniv
+addPaper  sin        Paul    Erdos      MATH     MAGAZINE    HaifaUniv
+addPaper  integral   Georg   Cantor     MATH     MAGAZINE    HaifaUniv
+
+
+// =======================================================================================================================
+// ==== remove paper (paperName) ====
+removePaper integral
+removePaper DataMinig
+removePaper sin
+removePaper sin
+
+
+// =======================================================================================================================
+// ==== add paper (name, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+
+addPaper  integral   Georg   Cantor     MATH        MAGAZINE    HaifaUniv
+addPaper  integral2   Georg   Cantor     MATH        MAGAZINE    HaifaUniv
+addPaper  DataMinig  Paul    Erdos      MATH     MAGAZINE    HaifaUniv
+addPaper  sin        Paul    Erdos      MATH     MAGAZINE    HaifaUniv
+addPaper  integral   Georg   Cantor     MATH        MAGAZINE    HaifaUniv
+
+addPaper  chem1   zineDine   zidane     CHEMISTRY       MAGAZINE    HaifaUniv
+addPaper  chem2   zineDine   zidane     CHEMISTRY       MAGAZINE    HaifaUniv
+addPaper  chem3   zineDine   zidane     CHEMISTRY       MAGAZINE    HaifaUniv
+addPaper  chem4    Van       Basten     CHEMISTRY       MAGAZINE    HaifaUniv
+addPaper  chem5    Van       Basten     CHEMISTRY       MAGAZINE    HaifaUniv
+
+
+// =======================================================================================================================
+// ==== addReader(firstName,lastName); ====
+addReader  Pipo   Inzagi    
+addReader  Massi   Rodregez     
+addReader  Leo   Messi       
+addReader  Lucka   Modric      
+addReader  Lucka   Modric     
+addReader  Juan   Requlmi     
+addReader  Thery   Henry   
+   
+
+
+// =======================================================================================================================
+// ==== remove reader (readerName); ====
+
+removeReader soso fofo
+removeReader mori poji
+removeReader Pipo   Inzagi
+removeReader Massi   Rodregez
+removeReader Leo   Messi
+
+
+// =======================================================================================================================
+// ==== add new reader addAuthor(firstName,lastName, id); ====
+
+addReader  Pipo   Inzagi     
+addReader  Massi   Rodregez     
+addReader  Leo   Messi   
+
+// =======================================================================================================================
+// ==== read book (readerfirstName, readerfirstName, bookName) ====
+
+readBook   Pipo    Inzagi      SetTheory
+readBook   Pipo    Inzagi      SetTheory
+readBook   Pipo    Inzagi      ErdosNumber
+readBook   Massi   Rodregez    ErdosNumber
+readBook   Leo     Messi       ErdosNumber
+readBook   Leo     Messi       SetTheory
+readBook   Lucka   Modric      SetTheory
+readBook   Lucka   Modric      BiologyBook
+readBook   Lucka   Modric      BiologyBook2
+readBook   Leo     Messi       BiologyBook
+readBook   Pipo    Inzagi      BiologyBook
+
+// =======================================================================================================================
+// ==== read paper (readerfirstName, readerfirstName, bookName) ====
+
+readPaper Pipo   Inzagi  sin
+readPaper Pipo   Inzagi  integral2
+readPaper Pipo   Inzagi  integral
+readPaper Pipo   Inzagi  ErdosNumber
+readPaper Massi   Rodregez  ErdosNumber
+readPaper  Leo   Messi  integral
+readPaper  Leo   Messi  SetTheory
+readPaper  Leo   Messi  chem1
+readPaper  Leo   Messi  chem4
+readPaper  Pipo   Inzagi  chem1
+
+
+readPaper  Thery   Henry  chem1
+ 
+readPaper  Juan   Requlmi  integral
+readPaper  Juan   Requlmi  sin
+// =======================================================================================================================
+// ==== makeBookReviw(readerFirstName, readerLastName, BookName, reviewSentence, Rate[1-10]) ====
+// ==== for example makeReviw Jane Haresson    BookOfCoking   great_book_to_learn_coking   5 ====
+
+
+makeBookReview  Pipo   Inzagi  SetTheory  great_book_to_learn_coking  10
+makeBookReview  Massi   Rodregez  SetTheory  great_book_to_learn_coking  8
+
+makeBookReview  Leo   Messi  ErdosNumber  great_book_to_learn_coking  8
+makeBookReview  Leo   Messi  ErdosNumber  great_book_to_learn_coking  8
+
+
+makeBookReview  Massi   Rodregez  SetTheory3  great_book_to_learn_coking  5
+makeBookReview  Pipo   Inzagi  SetTheory3  great_book_to_learn_coking  9
+
+
+makeBookReview  Massi   Rodregez  SetTheory2  great_book_to_learn_coking  3
+makeBookReview  Pipo   Inzagi  SetTheory2  great_book_to_learn_coking  9
+
+
+makeBookReview  Pipo  Inzagi   ChemistryBook  great_book_to_learn_coking  6
+makeBookReview  Leo   Messi    ChemistryBook  great_book_to_learn_coking  4
+
+makeBookReview  Pipo  Inzagi   BiologyBook    great_book_to_learn_coking  7
+makeBookReview  Leo   Messi    BiologyBook    great_book_to_learn_coking  1
+
+
+makeBookReview  Massi   Rodregez  BiologyBook2  great_book_to_learn_coking  3
+
+makeBookReview  Massi   Rodregez  BiologyBook3  great_book_to_learn_coking  1
+
+makeBookReview  Massi   Rodregez  MachineLearnning  great_book_to_learn_coking  2
+
+makeBookReview  Massi   Rodregez  newMath  great_book_to_learn_coking  1
+
+// =======================================================================================================================
+// ==== makePaperReviw(readerFirstName, readerLastName, BookName, reviewSentence, Rate[1-10]) ====
+// ==== for example makeReviw Jane Haresson    BookOfCoking   great_book_to_learn_coking   5 ====
+
+makePaperReview  Leo   Messi  integral  great_book_to_learn_coking  6   
+makePaperReview  Leo   Messi  DataMinig  great_book_to_learn_coking  7 
+makePaperReview  Pipo  Inzagi  integral  great_book_to_learn_coking  6 
+makePaperReview  Pipo  Inzagi  chem1  great_book_to_learn_coking  4 
+makePaperReview  Pipo  Inzagi  chem2  great_book_to_learn_coking  5 
+makePaperReview  Pipo  Inzagi  chem3  great_book_to_learn_coking  6 
+makePaperReview  Leo   Messi   chem3  great_book_to_learn_coking  10 
+
+makePaperReview  Leo   Messi   sin  great_book_to_learn_coking  3
+makePaperReview  Pipo  Inzagi   sin  great_book_to_learn_coking  1 
+
+makePaperReview  Leo   Messi   chem4  great_book_to_learn_coking  1
+makePaperReview  Leo   Messi   chem5  great_book_to_learn_coking  3 
+
+
+// =======================================================================================================================
+// ==== best book in library ====
+
+getBestBook  Arithmetic
+
+
+// =======================================================================================================================
+// ==== best paper in library ====
+
+getBestPaper  Arithmetic
+// =======================================================================================================================
+// ==== best k books in library ====
+
+getBestBooks 6  Arithmetic
+getBestBooks 4  Arithmetic
+getBestBooks 3  Arithmetic
+getBestBooks 2  Arithmetic
+
+// =======================================================================================================================
+// ==== best k papers in library ====
+
+getBestPapers 5  Arithmetic
+getBestPapers 4  Arithmetic
+getBestPapers 2  Arithmetic
+// =======================================================================================================================
+// ==== best k books for author in library ====
+
+getBestAuthorBooks   Georg   Cantor  2  Arithmetic
+getBestAuthorBooks   Georg   Cantor  3  Arithmetic
+
+// =======================================================================================================================
+// ==== best k papers for author in library ====
+
+getBestAuthorPapers  soso       dodo   2  Arithmetic
+getBestAuthorPapers  zineDine   zidane  3  Arithmetic
+
+// =======================================================================================================================
+// ==== best k books for Topic in library ====
+
+getBestTopicBooks   MATH     2  Arithmetic
+getBestTopicBooks   MATH     3  Arithmetic
+  
+getBestTopicBooks   BIOLOGY     3  Arithmetic
+getBestTopicBooks   BIOLOGY     2  Arithmetic
+
+
+// =======================================================================================================================
+// ==== best k papers for Topic in library ====
+
+getBestTopicPapers MATH    2   Arithmetic
+getBestTopicPapers MATH    3   Arithmetic
+
+getBestTopicPapers CHEMISTRY    3   Arithmetic
+getBestTopicPapers CHEMISTRY    2   Arithmetic
+
+
+
+// =======================================================================================================================
+// ==== recommend fit k books by topic ====
+recommendBooksByTopic  Leo     Messi   5  Arithmetic
+recommendBooksByTopic  Leo     Messi   4  Arithmetic
+recommendBooksByTopic  Leo     Messi   3  Arithmetic
+recommendBooksByTopic  Lucka   Modric  5  Arithmetic
+recommendBooksByTopic  Lucka   Modric  3  Arithmetic
+
+// =======================================================================================================================
+// ==== recommend fit k books by author ====
+
+recommendBooksByAuthor  Lucka   Modric  5  Arithmetic
+recommendBooksByAuthor  Lucka   Modric  1  Arithmetic
+
+// =======================================================================================================================
+// ==== recommend fit k papers by topic ====
+recommendPapersByTopic  Leo   Messi  5  Arithmetic
+recommendPapersByTopic  Pipo  Inzagi  2  Arithmetic
+recommendPapersByTopic  Pipo  Inzagi  1  Arithmetic
+
+// =======================================================================================================================
+// ==== recommend fit k papers by author ====
+recommendPapersByAuthor  Lucka   Modric    5  Arithmetic
+recommendPapersByAuthor  Pipo    Inzagi    3  Arithmetic
+recommendPapersByAuthor  Pipo    Inzagi    1  Arithmetic
+
+
+// =======================================================================================================================
+// ==== getBestReaders k ====
+
+getBestReaders 4
+getBestReaders 3
+getBestReaders 2
+getBestReaders 1
+
+// =======================================================================================================================
+// ==== getBestAuthors k ====
+
+getBestAuthors 5
+getBestAuthors 3
+getBestAuthors 2
+getBestAuthors 1
+
+
+// =======================================================================================================================
+// ==== addAuthor(firstName,lastName, topic); ====
+
+addAuthor  author1Name      author1LastName         CS 
+addAuthor  author2Name      author2LastName         CHEMISTRY 
+addAuthor  author3Name   	author3LastName         HISTORY
+addAuthor  author4Name  	author4LastName         MATH 
+addAuthor  author5Name      author5LastName			CS
+addAuthor  author6Name      author6LastName			MATH
+addAuthor  author7Name      author7LastName			CHEMISTRY
+addAuthor  author8Name      author8LastName	        SOCIOLOGY
+addAuthor  author9Name      author9LastName		    PHYSICS
+// =======================================================================================================================
+// ==== addEncyclopedia encyclopediaName ====
+
+addEncyclopedia ene1
+
+// =======================================================================================================================
+// ==== addEncyclopediaBook (encyclopediaName, Bookname, authorFistName, authorLatName, bookTopic, BookSize(enum), AcademicBook(enum) ====
+
+addEncyclopediaBook    ene1		book1    author1Name    author1LastName    CS           AVERAGE    ACADEMIC
+addEncyclopediaBook    ene1		book2    author2Name    author2LastName    CHEMISTRY    AVERAGE    ACADEMIC
+addEncyclopediaBook    ene1		book3    author3Name    author3LastName    HISTORY      AVERAGE    ACADEMIC
+addEncyclopediaBook    ene1		book4    author4Name    author4LastName    MATH         AVERAGE    ACADEMIC
+
+
+
+// =======================================================================================================================
+// ==== getEncyclopediaBooks encyclopediaName ====
+
+getEncyclopediaBooks ene1
+
+// =======================================================================================================================
+// ==== getEncyclopediaTopics encyclopediaName ====
+
+getEncyclopediaTopics ene1
+
+// =======================================================================================================================
+// ==== getEncyclopediaAuthors encyclopediaName ====
+
+getEncyclopediaAuthors ene1
+
+// =======================================================================================================================
+// ==== addMagazine MagazineName ====
+
+addMagazine HaifaMagazine
+
+// =======================================================================================================================
+// ==== addMagazinePaper (MagazineName, PaperName, authorFistName, authorLatName, paperkTopic, PaperValue(enum), university) ====
+			
+addMagazinePaper    HaifaMagazine		paper1         author5Name   author5LastName	 CS    	       CONFERENCE   Haifa_university
+addMagazinePaper    HaifaMagazine		paper2         author6Name   author6LastName     MATH          MAGAZINE     MIT_university
+addMagazinePaper    HaifaMagazine		paper3         author7Name   author7LastName     CHEMISTRY     WORK_SHOP    Oxford_university
+addMagazinePaper    HaifaMagazine		paper4         author8Name   author8LastName     SOCIOLOGY     CONFERENCE   Tel Aviv_university
+addMagazinePaper    HaifaMagazine		paper5         author5Name   author5LastName     CS            MAGAZINE     haifa_university
+addMagazinePaper    HaifaMagazine		paper6         author9Name   author9LastName     PHYSICS       CONFERENCE   Yael_university
+// =======================================================================================================================
+// ==== getMagazinePapers MagazineName ====
+
+getMagazinePapers HaifaMagazine
+
+// =======================================================================================================================
+// ==== getMagazineTopics MagazineName ====
+
+getMagazineTopics HaifaMagazine
+
+// =======================================================================================================================
+// ==== getMagazineAuthors MagazineName ====
+
+getMagazineAuthors HaifaMagazine
+
+// =======================================================================================================================
+// ==== getLibraryAuthors ====
+getLibraryAuthors
+
+// =======================================================================================================================
+// ==== getLibraryBooks ====
+getLibraryBooks
+
+// =======================================================================================================================
+// ==== getLibraryPapers ====
+getLibraryPapers
+
+// =======================================================================================================================
+// ==== getLibraryReaders ====
+getLibraryReaders
+
+
+
+
+
+
+
